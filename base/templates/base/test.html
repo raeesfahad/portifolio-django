@@ -1,0 +1,20 @@
+{% include 'base.html'%}
+
+{% block content %}
+
+{% for data in cv %}
+
+<h1>{{data.title}}</h1>
+{% for tag in data.taglines %}
+   
+{{tag}}
+ 
+{% endfor %}
+
+{% endfor %}
+
+
+
+
+
+{% endblock content %}
